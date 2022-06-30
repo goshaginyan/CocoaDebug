@@ -51,6 +51,11 @@ import UIKit
     @objc public static func showBubble() {
         CocoaDebugSettings.shared.showBubbleAndWindow = true
     }
+
+    //MARK: - toggle Bubble
+    @objc public static func toggleBubble() {
+        CocoaDebugSettings.shared.showBubbleAndWindow.toggle()
+    }
 }
 
 
